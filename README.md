@@ -1,68 +1,37 @@
-Employee Attrition Prediction 🚪💼
-This project focuses on predicting employee attrition using machine learning techniques. By analyzing various features like job role, satisfaction level, salary, and working conditions, the model helps identify employees who are at risk of leaving the organization.
-
-🔍 Problem Statement
-Employee attrition is a major concern for HR departments. Understanding the factors that influence employees to leave can help organizations take preventive measures. The goal of this project is to build a predictive model that can classify whether an employee is likely to stay or leave.
-
+💼 Employee Attrition Prediction
+Predicting which employees are likely to leave a company using machine learning techniques. This project helps HR departments make proactive decisions by analyzing workplace factors that contribute to employee churn.
+________________________________________
+📌 About
+This project applies supervised learning algorithms to predict whether an employee will leave the company based on key features such as satisfaction level, job role, salary, and working hours. The goal is to help organizations identify potential attrition risks and improve employee retention strategies.
+________________________________________
 🧠 Project Workflow
-Data Exploration & Cleaning
+1. 🔍 Data Exploration & Cleaning
+•	Checked for missing values and inconsistencies
+•	Encoded categorical variables (Label Encoding & One-Hot Encoding)
+•	Normalized/standardized numerical features
+2. 📊 Exploratory Data Analysis (EDA)
+•	Analyzed patterns in attrition across departments, salary levels, and job satisfaction
+•	Visualized relationships between features and attrition using Seaborn & Matplotlib
+3. 🛠️ Feature Engineering
+•	Selected important features based on correlation and business logic
+•	Scaled features for better model convergence
+4. 🤖 Model Building
+Trained and tested multiple classification models:
+•	Logistic Regression
+•	Decision Tree
+•	Random Forest
+•	K-Nearest Neighbors (KNN)
+5. 📈 Evaluation
+•	Evaluated models using Accuracy, Precision, Recall, F1-Score, and Confusion Matrix
+•	Random Forest achieved the best performance with ~87% accuracy
+________________________________________
+📦 Tech Stack
+•	Language: Python
+•	Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+•	Environment: Jupyter Notebook
+________________________________________
+✅ Key Findings
+•	Employees with low satisfaction and high workloads are more likely to leave
+•	Satisfaction level, number of projects, and average monthly hours are top predictors of attrition
+•	Random Forest provided the most reliable predictions with strong performance metrics
 
-Handled missing values and checked data distribution
-
-Converted categorical variables using label encoding and one-hot encoding
-
-Exploratory Data Analysis (EDA)
-
-Visualized trends in attrition by department, satisfaction level, salary, and more
-
-Identified key features correlated with employee churn
-
-Feature Selection & Scaling
-
-Selected relevant features for training
-
-Standardized numerical features for better model performance
-
-Modeling
-
-Implemented classification models including:
-
-Logistic Regression
-
-Random Forest
-
-Decision Tree
-
-K-Nearest Neighbors
-
-Evaluated models using accuracy, confusion matrix, precision, recall, and F1-score
-
-Result
-
-Random Forest gave the best results with an accuracy of ~87%
-
-Feature importance showed that satisfaction level, number of projects, and average monthly hours were key drivers of attrition
-
-📊 Tech Stack
-Python
-
-Pandas, NumPy – Data manipulation
-
-Matplotlib, Seaborn – Data visualization
-
-Scikit-learn – ML modeling and evaluation
-
-Jupyter Notebook
-
-📎 How to Use
-Clone this repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/shivangishuklaa/Employee-Attrition-Problem.git
-cd Employee-Attrition-Problem
-Open the notebook in Jupyter and run all cells in sequence to train and evaluate models.
-
-📌 Conclusion
-This project shows that machine learning can be a powerful tool for HR analytics. By predicting attrition risks early, companies can improve employee retention and reduce turnover costs.
